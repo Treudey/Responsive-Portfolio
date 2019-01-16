@@ -1,18 +1,27 @@
+/* Common Shared Styles
+**********************************************************/
+
+
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     margin: 0px;
-    background-image: url(../images/pipes.png)
+    background-image: url(../images/pixel_weave.png)
 }
 
-h2 {
-    font-size: 40px;
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-bottom: 28px;
-    border-bottom: 2px solid #aaaaaa;
-    margin-bottom: 28px;
+/* Header
+**********************************************************/
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.toolbar {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -27,13 +36,8 @@ h1 {
     padding: auto;
     margin: 0;
     display: inline-block;
-
 }
 
-.toolbar {
-    max-width: 960px;
-    margin: 0 auto;
-}
 .nav {
     color: #777777;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -45,17 +49,8 @@ h1 {
 
 }
 
-p {
-    color: #777777;
-    margin-bottom: 23px;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    line-height: 2;
-}
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
-}
+/* Main Content of Page
+********************************************************************/
 
 main {
     flex: 1;
@@ -66,17 +61,63 @@ main {
     border: 1px solid #dddddd;
 }
 
-img {
-    float: left;
-    margin: 8px 15px 15px 0px;
+h2 {
+    font-size: 40px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #aaaaaa;
+    margin-bottom: 28px;
 }
+
+.profile-pic {
+    float: left;
+    margin: 8px 15px 15px 0;
+}
+
+p {
+    color: #777777;
+    margin-bottom: 23px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.portfolio-box {
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-image {
+    height: 250px;
+    width: 375px;
+    margin: 8px 40px 50px 0;
+    z-index: 1;
+}
+
+.text-box {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 375px;
+    height: 75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 75px;
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    z-index: 2;
+}
+/* Footer
+*********************************************/
 
 footer {
     color: #dddddd;
+    font-size: small;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #666666;
-    padding: 50px 20px 10px;
+    padding: 35px 20px 10px;
     text-align: center;
     margin-top: 60px;
     border-top: 8px solid #4aaaa5
   }
+

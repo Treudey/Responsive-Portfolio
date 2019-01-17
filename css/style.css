@@ -4,9 +4,6 @@
 
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     margin: 0px;
     background-image: url(../images/pixel_weave.png)
 }
@@ -26,13 +23,13 @@ header {
 
 h1 {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     line-height: 100px;
     background-color: #4aaaa5;
     height: 100px;
-    width: 280px;
+    width: 240px;
     padding: auto;
     margin: 0;
     display: inline-block;
@@ -53,7 +50,6 @@ h1 {
 ********************************************************************/
 
 main {
-    flex: 1;
     max-width: 920px;
     margin: 30px auto;
     padding: 0px 20px 20px;
@@ -62,12 +58,12 @@ main {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 28px;
-    border-bottom: 2px solid #aaaaaa;
-    margin-bottom: 28px;
+    border-bottom: 3px solid #dddddd;
+    margin-bottom: 20px;
 }
 
 .profile-pic {
@@ -83,6 +79,7 @@ p {
 }
 
 .portfolio-box {
+    margin: 28px 40px 40px 0;
     position: relative;
     display: inline-block;
 }
@@ -90,8 +87,6 @@ p {
 .portfolio-image {
     height: 250px;
     width: 375px;
-    margin: 8px 40px 50px 0;
-    z-index: 1;
 }
 
 .text-box {
@@ -105,7 +100,36 @@ p {
     text-align: center;
     position: absolute;
     top: 170px;
-    z-index: 2;
+}
+
+label {
+    color: #777777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2;
+    font-size: large;
+}
+
+.text-input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+button {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-size: large;
+    width: 120px;
+    height: 40px;
+    margin: 15px 0;
+    border: none;
+   
 }
 /* Footer
 *********************************************/

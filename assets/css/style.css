@@ -73,15 +73,15 @@ nav {
 
 h1 {
     width: 240px;
-    padding: auto;
     margin: 0;
     display: inline-block;
 }
 
+.link-box { float: right; }
+
 .nav-link, 
-span {
+span { 
     text-decoration: none;
-    float: right;
     margin: 0 8px;
 }
 
@@ -113,6 +113,7 @@ h2 {
 .profile-pic {
     float: left;
     margin: 8px 15px 15px 0;
+    height: 220px;
 }
 
 /* Portfolio Buttons
@@ -135,7 +136,7 @@ h2 {
 
 .text-box {
     position: absolute;
-    top: 165px;
+    top: 66%;
     font-size: 25px;
     line-height: 75px;
     height: 75px;
@@ -182,4 +183,110 @@ footer {
     padding: 35px 0px 10px;
     margin-top: 60px;
     border-top: 8px solid #4aaaa5
-  }
+}
+
+@media only screen and (max-width: 980px) {
+    
+    nav {
+        max-width: 890px;
+        margin: 0 auto;
+    }
+
+    main {
+        max-width: 570px;
+        margin: 30px auto 30px 45px;
+    }
+
+    .portfolio-box, 
+    .portfolio-image, 
+    .text-box { width: 253px; }
+
+    .portfolio-box, 
+    .portfolio-image { height: 180px; }
+
+    .portfolio-box {
+        margin: 15px 30px 30px 0;
+    }
+
+    .text-box {
+        font-size: 20px;
+        line-height: 53px;
+        height: 53px;
+    }
+
+    footer { 
+        padding: 0;
+        height: 72px;
+        line-height: 72px;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 0;
+        max-width: none;
+        margin: 0 20px;
+    }
+
+    main {
+        max-width: none;
+        margin: 30px 20px;
+    }
+
+    .portfolio-box, 
+    .portfolio-image, 
+    .text-box { width: 285px; }
+
+    .portfolio-box, 
+    .portfolio-image { height: 190px; }
+
+    .text-box {
+        font-size: 23px;
+        line-height: 58px;
+        height: 58px;
+    }
+} 
+  
+@media only screen and (max-width: 640px) {
+    nav {
+        margin: 0;
+        height: 150px;
+        text-align: center;
+    }
+    
+    h1 {
+        line-height: 90px;
+        width: 100%;
+        display: block;
+    }
+    
+    .link-box { 
+        height: 60px;
+        line-height: 60px;
+        float: none;
+    }
+
+    .nav-link, 
+    span {
+        margin: 0 12px;
+    }
+
+    .profile-pic {
+        float: none;
+        margin: 8px auto 15px auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .portfolio-box, 
+    .portfolio-image, 
+    .text-box { width: 405px; }
+
+    .portfolio-box, 
+    .portfolio-image { height: 270px; }
+
+    .text-box {
+        top: 75%;
+    }
+
+} 

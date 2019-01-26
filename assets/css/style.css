@@ -275,6 +275,11 @@ footer {
         margin: 0 12px;
     }
 
+    main {
+        max-width: none;
+        margin: 20px 15px;
+    }
+
     .profile-pic {
         float: none;
         margin: 8px auto 15px auto;

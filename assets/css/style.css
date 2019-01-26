@@ -130,6 +130,7 @@ h2 {
     margin: 28px 40px 40px 0;
     position: relative;
     display: inline-block;
+    text-decoration: none;
 }
 
 .portfolio-box:hover { outline: 5px solid #4aaaa5; }
@@ -184,6 +185,9 @@ footer {
     margin-top: 60px;
     border-top: 8px solid #4aaaa5
 }
+
+/* Media Queries
+**********************************************/
 
 @media only screen and (max-width: 980px) {
     
@@ -280,12 +284,17 @@ footer {
 
     .portfolio-box, 
     .portfolio-image, 
-    .text-box { width: 405px; }
+    .text-box { width: 100%; }
 
     .portfolio-box, 
-    .portfolio-image { height: 270px; }
+    .portfolio-image { height: auto; }
+
+    .portfolio-box:hover { 
+        outline: 6px solid #4aaaa5;
+        outline-offset: -4px; 
+    }
 
     .text-box {
-        top: 75%;
+        top: 70%;
     }
 } 
